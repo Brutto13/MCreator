@@ -17,7 +17,6 @@ import net.mcreator.arduinomod.item.SchematicItem;
 import net.mcreator.arduinomod.item.PernamentMarkerItem;
 import net.mcreator.arduinomod.item.PCBprojectItem;
 import net.mcreator.arduinomod.item.MarkedCopperSheetItem;
-import net.mcreator.arduinomod.item.LItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyItem;
 import net.mcreator.arduinomod.item.CopperSheetItem;
@@ -37,7 +36,6 @@ public class ArduinoModModItems {
 	public static final RegistryObject<Item> ELECTRICAL_ENERGY_TANK = REGISTRY.register("electrical_energy_tank",
 			() -> new ElectricalEnergyTankItem());
 	public static final RegistryObject<Item> SCHEMATIC = REGISTRY.register("schematic", () -> new SchematicItem());
-	public static final RegistryObject<Item> L = REGISTRY.register("l", () -> new LItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
