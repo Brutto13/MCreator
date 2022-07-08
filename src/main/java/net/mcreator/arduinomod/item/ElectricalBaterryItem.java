@@ -10,7 +10,7 @@ import net.mcreator.arduinomod.init.ArduinoModModTabs;
 
 public class ElectricalBaterryItem extends Item {
 	public ElectricalBaterryItem() {
-		super(new Item.Properties().tab(ArduinoModModTabs.TAB_ELECTRICAL_MOD).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(ArduinoModModTabs.TAB_ELECTRICAL_MOD).durability(3).rarity(Rarity.COMMON));
 	}
 
 	@Override

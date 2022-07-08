@@ -6,7 +6,7 @@
     "texture": "diamondenergytank",
     "customModelName": "Normal",
     "name": "Diamond Electrical Energy Tank",
-    "rarity": "COMMON",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:ElectricalMod"
     },
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": false,
+    "hasGlow": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,

@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "arduino_mod:blocks/workstation",
-    "up": "arduino_mod:blocks/workstationtop",
-    "north": "arduino_mod:blocks/workstation",
-    "east": "arduino_mod:blocks/workstation",
-    "south": "arduino_mod:blocks/workstation",
-    "west": "arduino_mod:blocks/workstation",
-    "particle": "arduino_mod:blocks/workstation"
+    "down": "arduino_mod:blocks/pt_bottom",
+    "up": "arduino_mod:blocks/pt_top",
+    "north": "arduino_mod:blocks/pt_front",
+    "east": "arduino_mod:blocks/pt_left",
+    "south": "arduino_mod:blocks/pt_back",
+    "west": "arduino_mod:blocks/pt_right",
+    "particle": "arduino_mod:blocks/pt_bottom"
   }
 }

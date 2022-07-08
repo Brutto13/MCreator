@@ -40,7 +40,6 @@ public class ArduinoModModItems {
 	public static final RegistryObject<Item> ELECTRICAL_ENERGY_TANK = REGISTRY.register("electrical_energy_tank",
 			() -> new ElectricalEnergyTankItem());
 	public static final RegistryObject<Item> SCHEMATIC = REGISTRY.register("schematic", () -> new SchematicItem());
-	public static final RegistryObject<Item> PROJECT_TABLE = block(ArduinoModModBlocks.PROJECT_TABLE, ArduinoModModTabs.TAB_ELECTRICAL_MOD);
 	public static final RegistryObject<Item> READY_PCB = REGISTRY.register("ready_pcb", () -> new ReadyPCBItem());
 	public static final RegistryObject<Item> ELECTRICAL_BATERRY = REGISTRY.register("electrical_baterry", () -> new ElectricalBaterryItem());
 	public static final RegistryObject<Item> RECHARGER_BLOCK = block(ArduinoModModBlocks.RECHARGER_BLOCK, ArduinoModModTabs.TAB_ELECTRICAL_MOD);
