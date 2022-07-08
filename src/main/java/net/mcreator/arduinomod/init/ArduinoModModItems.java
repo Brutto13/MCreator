@@ -47,6 +47,8 @@ public class ArduinoModModItems {
 			() -> new GoldenElectricalEnergyTankItem());
 	public static final RegistryObject<Item> DIAMOND_ELECTRICAL_ENERGY_TANK = REGISTRY.register("diamond_electrical_energy_tank",
 			() -> new DiamondElectricalEnergyTankItem());
+	public static final RegistryObject<Item> PROJECT_TABLE_BLOCK = block(ArduinoModModBlocks.PROJECT_TABLE_BLOCK,
+			ArduinoModModTabs.TAB_ELECTRICAL_MOD);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

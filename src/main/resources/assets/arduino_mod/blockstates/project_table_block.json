@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arduino_mod:block/project_table_block"
+    }
+  }
+}

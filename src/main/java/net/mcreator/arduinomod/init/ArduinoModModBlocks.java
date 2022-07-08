@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.arduinomod.block.WorkStationBlock;
 import net.mcreator.arduinomod.block.RechargerBlockBlock;
+import net.mcreator.arduinomod.block.ProjectTableBlockBlock;
 import net.mcreator.arduinomod.block.PCBcreatorBlock;
 import net.mcreator.arduinomod.ArduinoModMod;
 
@@ -20,4 +21,5 @@ public class ArduinoModModBlocks {
 	public static final RegistryObject<Block> WORK_STATION = REGISTRY.register("work_station", () -> new WorkStationBlock());
 	public static final RegistryObject<Block> PC_BCREATOR = REGISTRY.register("pc_bcreator", () -> new PCBcreatorBlock());
 	public static final RegistryObject<Block> RECHARGER_BLOCK = REGISTRY.register("recharger_block", () -> new RechargerBlockBlock());
+	public static final RegistryObject<Block> PROJECT_TABLE_BLOCK = REGISTRY.register("project_table_block", () -> new ProjectTableBlockBlock());
 }
