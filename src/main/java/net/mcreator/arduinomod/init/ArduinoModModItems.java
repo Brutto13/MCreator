@@ -22,6 +22,7 @@ import net.mcreator.arduinomod.item.GoldenElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyItem;
 import net.mcreator.arduinomod.item.ElectricalBaterryItem;
+import net.mcreator.arduinomod.item.DiamondElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.CopperSheetItem;
 import net.mcreator.arduinomod.item.ChemicalsItem;
 import net.mcreator.arduinomod.ArduinoModMod;
@@ -44,6 +45,8 @@ public class ArduinoModModItems {
 	public static final RegistryObject<Item> RECHARGER_BLOCK = block(ArduinoModModBlocks.RECHARGER_BLOCK, ArduinoModModTabs.TAB_ELECTRICAL_MOD);
 	public static final RegistryObject<Item> GOLDEN_ELECTRICAL_ENERGY_TANK = REGISTRY.register("golden_electrical_energy_tank",
 			() -> new GoldenElectricalEnergyTankItem());
+	public static final RegistryObject<Item> DIAMOND_ELECTRICAL_ENERGY_TANK = REGISTRY.register("diamond_electrical_energy_tank",
+			() -> new DiamondElectricalEnergyTankItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

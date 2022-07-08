@@ -235,6 +235,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "golden_electrical_energy_tank"
+    },
+    {
+      "name": "GoldenEnergyTankRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_energy_tank_recipe"
+    },
+    {
+      "name": "DiamondElectricalEnergyTank",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_electrical_energy_tank"
+    },
+    {
+      "name": "Rechargingprocedure",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rechargingprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -250,6 +282,7 @@
       "item.arduino_mod.chemicals": "Chemicals",
       "item.arduino_mod.golden_electrical_energy_tank": "Golden Electrical Energy Tank",
       "item.arduino_mod.copper_sheet": "Copper Sheet",
+      "item.arduino_mod.diamond_electrical_energy_tank": "Diamond Electrical Energy Tank",
       "block.arduino_mod.recharger_block": "Recharger Block",
       "block.arduino_mod.pc_bcreator": "PCB creator",
       "item.arduino_mod.pernament_marker": "Pernament Marker",
