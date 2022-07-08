@@ -44,14 +44,14 @@ public class PCBCreatorProcedureProcedure {
 					&& _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.BUCKET);
 				_setstack.setCount(1);
-				((Slot) _slots.get(2)).set(_setstack);
+				((Slot) _slots.get(3)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(ArduinoModModItems.READY_PCB.get());
 				_setstack.setCount(1);
-				((Slot) _slots.get(0)).set(_setstack);
+				((Slot) _slots.get(4)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 		}

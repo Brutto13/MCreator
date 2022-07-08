@@ -12,6 +12,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.arduinomod.world.inventory.RechargerGUIMenu;
+import net.mcreator.arduinomod.network.RechargerGUIButtonMessage;
+import net.mcreator.arduinomod.ArduinoModMod;
 
 import java.util.HashMap;
 
@@ -88,6 +90,10 @@ public class RechargerGUIScreen extends AbstractContainerScreen<RechargerGUIMenu
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 49, this.topPos + 29, 56, 20, new TextComponent("charge"), e -> {
+			if (true) {
+				ArduinoModMod.PACKET_HANDLER.sendToServer(new RechargerGUIButtonMessage(0, x, y, z));
+				RechargerGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 	}
 }

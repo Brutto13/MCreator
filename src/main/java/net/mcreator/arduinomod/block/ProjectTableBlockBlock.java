@@ -34,7 +34,7 @@ import io.netty.buffer.Unpooled;
 
 public class ProjectTableBlockBlock extends Block {
 	public ProjectTableBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(1f, 10f));
 	}
 
 	@Override

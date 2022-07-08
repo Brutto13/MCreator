@@ -65,6 +65,9 @@
         "type": "button",
         "data": {
           "text": "charge",
+          "onClick": {
+            "name": "Rechargingprocedure"
+          },
           "width": 56,
           "height": 20,
           "name": "charge",
