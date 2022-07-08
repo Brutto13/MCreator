@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "arduino_mod:items/chemicals"
+    "layer0": "arduino_mod:items/butladziwna"
   }
 }
