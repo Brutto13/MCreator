@@ -8,9 +8,9 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.arduinomod.init.ArduinoModModTabs;
 
-public class ChemicalsItem extends Item {
-	public ChemicalsItem() {
-		super(new Item.Properties().tab(ArduinoModModTabs.TAB_ELECTRICAL_MOD).durability(5).rarity(Rarity.COMMON));
+public class ReadyPCBItem extends Item {
+	public ReadyPCBItem() {
+		super(new Item.Properties().tab(ArduinoModModTabs.TAB_ELECTRICAL_MOD).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

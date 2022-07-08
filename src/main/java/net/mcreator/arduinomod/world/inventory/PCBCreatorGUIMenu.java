@@ -79,13 +79,13 @@ public class PCBCreatorGUIMenu extends AbstractContainerMenu implements Supplier
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 45, 31) {
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 146, 30) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 146, 30) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 84, 31) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 84, 31) {
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)

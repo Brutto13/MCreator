@@ -12,6 +12,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.arduinomod.world.inventory.PCBCreatorGUIMenu;
+import net.mcreator.arduinomod.network.PCBCreatorGUIButtonMessage;
+import net.mcreator.arduinomod.ArduinoModMod;
 
 import java.util.HashMap;
 
@@ -94,6 +96,10 @@ public class PCBCreatorGUIScreen extends AbstractContainerScreen<PCBCreatorGUIMe
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 107, this.topPos + 56, 56, 20, new TextComponent("pickle"), e -> {
+			if (true) {
+				ArduinoModMod.PACKET_HANDLER.sendToServer(new PCBCreatorGUIButtonMessage(0, x, y, z));
+				PCBCreatorGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 	}
 }
