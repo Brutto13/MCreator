@@ -11,7 +11,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.arduinomod.block.WorkStationBlock;
-import net.mcreator.arduinomod.block.TasdjfhaBlock;
 import net.mcreator.arduinomod.block.PCBcreatorBlock;
 import net.mcreator.arduinomod.ArduinoModMod;
 
@@ -19,5 +18,4 @@ public class ArduinoModModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, ArduinoModMod.MODID);
 	public static final RegistryObject<Block> WORK_STATION = REGISTRY.register("work_station", () -> new WorkStationBlock());
 	public static final RegistryObject<Block> PC_BCREATOR = REGISTRY.register("pc_bcreator", () -> new PCBcreatorBlock());
-	public static final RegistryObject<Block> TASDJFHA = REGISTRY.register("tasdjfha", () -> new TasdjfhaBlock());
 }
