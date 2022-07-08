@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.arduinomod.client.gui.WorkstationGUIScreen;
 import net.mcreator.arduinomod.client.gui.SchematicsTableGUIScreen;
+import net.mcreator.arduinomod.client.gui.RechargerGUIScreen;
 import net.mcreator.arduinomod.client.gui.ProjectTableGUIScreen;
 import net.mcreator.arduinomod.client.gui.PCBCreatorGUIScreen;
 
@@ -25,6 +26,7 @@ public class ArduinoModModScreens {
 			MenuScreens.register(ArduinoModModMenus.WORKSTATION_GUI, WorkstationGUIScreen::new);
 			MenuScreens.register(ArduinoModModMenus.PROJECT_TABLE_GUI, ProjectTableGUIScreen::new);
 			MenuScreens.register(ArduinoModModMenus.SCHEMATICS_TABLE_GUI, SchematicsTableGUIScreen::new);
+			MenuScreens.register(ArduinoModModMenus.RECHARGER_GUI, RechargerGUIScreen::new);
 		});
 	}
 }

@@ -211,6 +211,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "electrical_baterry"
+    },
+    {
+      "name": "RechargerGUI",
+      "type": "gui",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharger_gui"
+    },
+    {
+      "name": "RechargerBlock",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharger_block"
     }
   ],
   "variable_elements": [],
@@ -219,12 +235,13 @@
     "en_us": {
       "item.arduino_mod.pc_bproject": "PC Bproject",
       "item.arduino_mod.marked_copper_sheet": "Marked Copper Sheet",
-      "item.arduino_mod.ready_pcb": "Ready PCB",
       "item.arduino_mod.schematic": "Schematic",
-      "item.arduino_mod.electrical_energy_tank": "Electrical Energy Tank",
+      "item.arduino_mod.ready_pcb": "Ready PCB",
       "item.arduino_mod.electrical_energy": "Electrical Energy",
+      "item.arduino_mod.electrical_energy_tank": "Electrical Energy Tank",
       "item.arduino_mod.chemicals": "Chemicals",
       "item.arduino_mod.copper_sheet": "Copper Sheet",
+      "block.arduino_mod.recharger_block": "Recharger Block",
       "block.arduino_mod.pc_bcreator": "PCB creator",
       "item.arduino_mod.pernament_marker": "Pernament Marker",
       "itemGroup.tabelectrical_mod": "Electrical Mod",

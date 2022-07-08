@@ -14,6 +14,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 
 import net.mcreator.arduinomod.world.inventory.WorkstationGUIMenu;
 import net.mcreator.arduinomod.world.inventory.SchematicsTableGUIMenu;
+import net.mcreator.arduinomod.world.inventory.RechargerGUIMenu;
 import net.mcreator.arduinomod.world.inventory.ProjectTableGUIMenu;
 import net.mcreator.arduinomod.world.inventory.PCBCreatorGUIMenu;
 
@@ -31,6 +32,8 @@ public class ArduinoModModMenus {
 			(id, inv, extraData) -> new ProjectTableGUIMenu(id, inv, extraData));
 	public static final MenuType<SchematicsTableGUIMenu> SCHEMATICS_TABLE_GUI = register("schematics_table_gui",
 			(id, inv, extraData) -> new SchematicsTableGUIMenu(id, inv, extraData));
+	public static final MenuType<RechargerGUIMenu> RECHARGER_GUI = register("recharger_gui",
+			(id, inv, extraData) -> new RechargerGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

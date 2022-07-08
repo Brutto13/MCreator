@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arduino_mod:blocks/blocks",
+    "up": "arduino_mod:blocks/blocks",
+    "north": "arduino_mod:blocks/recharger",
+    "east": "arduino_mod:blocks/blocks",
+    "south": "arduino_mod:blocks/blocks",
+    "west": "arduino_mod:blocks/blocks",
+    "particle": "arduino_mod:blocks/blocks"
+  }
+}
