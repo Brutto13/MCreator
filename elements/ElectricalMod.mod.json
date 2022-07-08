@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "Electrical Mod",
+    "icon": {
+      "value": "Items.KNOWLEDGE_BOOK"
+    },
+    "showSearch": true
+  }
+}

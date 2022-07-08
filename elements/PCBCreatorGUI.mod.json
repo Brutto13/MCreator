@@ -1,0 +1,141 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -26317,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 132,
+          "y": 67
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -13369549,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 170,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "upgradetableiconinto.png",
+          "use1Xscale": false,
+          "name": "upgradetableiconinto.png",
+          "x": 238,
+          "y": 68
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 271,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "upgradetableiconplus.png",
+          "use1Xscale": false,
+          "name": "upgradetableiconplus.png",
+          "x": 154,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "upgradetableiconplus.png",
+          "use1Xscale": false,
+          "name": "upgradetableiconplus.png",
+          "x": 192,
+          "y": 69
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 209,
+          "y": 67
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "pickle",
+          "width": 56,
+          "height": 20,
+          "name": "pickle",
+          "x": 233,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "pickling machine",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "pickling machine",
+          "x": 166,
+          "y": 47
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

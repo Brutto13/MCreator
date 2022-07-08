@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:cut_copper_slab"
+  },
+  "addition": {
+    "item": "minecraft:honeycomb"
+  },
+  "result": {
+    "item": "arduino_mod:copper_sheet"
+  }
+}

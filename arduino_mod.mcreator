@@ -1,0 +1,224 @@
+{
+  "mod_elements": [
+    {
+      "name": "ElectricalMod",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_mod"
+    },
+    {
+      "name": "CopperSheet",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_sheet"
+    },
+    {
+      "name": "PernamentMarker",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pernament_marker"
+    },
+    {
+      "name": "PCBCreatorGUI",
+      "type": "gui",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pcb_creator_gui"
+    },
+    {
+      "name": "Chemicals",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chemicals"
+    },
+    {
+      "name": "PCBproject",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pc_bproject"
+    },
+    {
+      "name": "MarkedCopperSheet",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marked_copper_sheet"
+    },
+    {
+      "name": "CoppertoCopperSheet",
+      "type": "villagertrade",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperto_copper_sheet"
+    },
+    {
+      "name": "ChemicalsRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chemicals_recipe"
+    },
+    {
+      "name": "WorkstationGUI",
+      "type": "gui",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "workstation_gui"
+    },
+    {
+      "name": "WorkStation",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "work_station"
+    },
+    {
+      "name": "PCBcreator",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pc_bcreator"
+    },
+    {
+      "name": "ElectricalEnergy",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_energy"
+    },
+    {
+      "name": "ElectricalEnergyTank",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_energy_tank"
+    },
+    {
+      "name": "ProjectTableGUI",
+      "type": "gui",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "project_table_gui"
+    },
+    {
+      "name": "SchematicsTableGUI",
+      "type": "gui",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "schematics_table_gui"
+    },
+    {
+      "name": "ProjectTableProcedure",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "project_table_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Schematic",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "schematic"
+    },
+    {
+      "name": "CopperSheetRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_sheet_recipe"
+    },
+    {
+      "name": "ElectricalEnergyTankRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_energy_tank_recipe"
+    },
+    {
+      "name": "L",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "l"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.arduino_mod.pc_bproject": "PC Bproject",
+      "item.arduino_mod.marked_copper_sheet": "Marked Copper Sheet",
+      "item.arduino_mod.schematic": "Schematic",
+      "item.arduino_mod.electrical_energy": "Electrical Energy",
+      "item.arduino_mod.electrical_energy_tank": "Electrical Energy Tank",
+      "item.arduino_mod.chemicals": "Chemicals",
+      "item.arduino_mod.copper_sheet": "Copper Sheet",
+      "block.arduino_mod.pc_bcreator": "PCB creator",
+      "item.arduino_mod.l": "L",
+      "item.arduino_mod.pernament_marker": "Pernament Marker",
+      "itemGroup.tabelectrical_mod": "Electrical Mod",
+      "block.arduino_mod.work_station": "Work Station"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "arduino_mod",
+    "modName": "Arduino mod",
+    "version": "1.0.0",
+    "author": "Bruno, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.arduinomod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

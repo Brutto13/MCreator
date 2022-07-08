@@ -1,0 +1,14 @@
+{
+  "item.arduino_mod.pc_bproject": "PC Bproject",
+  "item.arduino_mod.marked_copper_sheet": "Marked Copper Sheet",
+  "item.arduino_mod.schematic": "Schematic",
+  "item.arduino_mod.electrical_energy": "Electrical Energy",
+  "item.arduino_mod.electrical_energy_tank": "Electrical Energy Tank",
+  "item.arduino_mod.chemicals": "Chemicals",
+  "item.arduino_mod.copper_sheet": "Copper Sheet",
+  "block.arduino_mod.pc_bcreator": "PCB creator",
+  "item.arduino_mod.l": "L",
+  "item.arduino_mod.pernament_marker": "Pernament Marker",
+  "itemGroup.tabelectrical_mod": "Electrical Mod",
+  "block.arduino_mod.work_station": "Work Station"
+}
