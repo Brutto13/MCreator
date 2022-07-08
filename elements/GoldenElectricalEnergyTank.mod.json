@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "goldenenergytank",
+    "texture": "g_e_t",
     "customModelName": "Normal",
     "name": "Golden Electrical Energy Tank",
     "rarity": "UNCOMMON",

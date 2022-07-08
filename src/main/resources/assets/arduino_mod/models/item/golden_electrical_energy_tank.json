@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "arduino_mod:items/goldenenergytank"
+    "layer0": "arduino_mod:items/g_e_t"
   }
 }

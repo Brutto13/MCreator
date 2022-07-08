@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "diamondenergytank",
+    "texture": "diamond_energy_tank",
     "customModelName": "Normal",
     "name": "Diamond Electrical Energy Tank",
     "rarity": "RARE",
