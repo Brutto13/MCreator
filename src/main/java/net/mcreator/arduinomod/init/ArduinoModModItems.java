@@ -18,6 +18,7 @@ import net.mcreator.arduinomod.item.ReadyPCBItem;
 import net.mcreator.arduinomod.item.PernamentMarkerItem;
 import net.mcreator.arduinomod.item.PCBprojectItem;
 import net.mcreator.arduinomod.item.MarkedCopperSheetItem;
+import net.mcreator.arduinomod.item.GoldenElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyItem;
 import net.mcreator.arduinomod.item.ElectricalBaterryItem;
@@ -41,6 +42,8 @@ public class ArduinoModModItems {
 	public static final RegistryObject<Item> READY_PCB = REGISTRY.register("ready_pcb", () -> new ReadyPCBItem());
 	public static final RegistryObject<Item> ELECTRICAL_BATERRY = REGISTRY.register("electrical_baterry", () -> new ElectricalBaterryItem());
 	public static final RegistryObject<Item> RECHARGER_BLOCK = block(ArduinoModModBlocks.RECHARGER_BLOCK, ArduinoModModTabs.TAB_ELECTRICAL_MOD);
+	public static final RegistryObject<Item> GOLDEN_ELECTRICAL_ENERGY_TANK = REGISTRY.register("golden_electrical_energy_tank",
+			() -> new GoldenElectricalEnergyTankItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
