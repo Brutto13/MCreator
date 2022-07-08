@@ -20,6 +20,7 @@ import net.mcreator.arduinomod.item.PCBprojectItem;
 import net.mcreator.arduinomod.item.MarkedCopperSheetItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyItem;
+import net.mcreator.arduinomod.item.ElectricalBaterryItem;
 import net.mcreator.arduinomod.item.CopperSheetItem;
 import net.mcreator.arduinomod.item.ChemicalsItem;
 import net.mcreator.arduinomod.ArduinoModMod;
@@ -38,6 +39,7 @@ public class ArduinoModModItems {
 			() -> new ElectricalEnergyTankItem());
 	public static final RegistryObject<Item> SCHEMATIC = REGISTRY.register("schematic", () -> new SchematicItem());
 	public static final RegistryObject<Item> READY_PCB = REGISTRY.register("ready_pcb", () -> new ReadyPCBItem());
+	public static final RegistryObject<Item> ELECTRICAL_BATERRY = REGISTRY.register("electrical_baterry", () -> new ElectricalBaterryItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
