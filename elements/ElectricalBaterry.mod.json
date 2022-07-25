@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "baterry",
+    "texture": "battery",
     "customModelName": "Normal",
     "name": "9V Baterry",
     "rarity": "COMMON",

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "arduino_mod:items/baterry"
+    "layer0": "arduino_mod:items/battery"
   }
 }
