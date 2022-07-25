@@ -20,8 +20,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 136,
-          "y": 80
+          "x": 148,
+          "y": 70
         }
       },
       {
@@ -30,12 +30,16 @@
           "inputLimit": {
             "value": ""
           },
+          "color": {
+            "value": -3355648,
+            "falpha": 0.0
+          },
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 171,
-          "y": 80
+          "x": 188,
+          "y": 69
         }
       },
       {
@@ -45,18 +49,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #2",
-          "x": 220,
-          "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "energysymbol.png",
-          "use1Xscale": false,
-          "name": "energysymbol.png",
-          "x": 172,
-          "y": 80
+          "x": 241,
+          "y": 68
         }
       },
       {
@@ -65,8 +59,8 @@
           "image": "upgradetableiconplus.png",
           "use1Xscale": false,
           "name": "upgradetableiconplus.png",
-          "x": 156,
-          "y": 82
+          "x": 172,
+          "y": 72
         }
       },
       {
@@ -75,32 +69,22 @@
           "image": "upgradetableiconinto.png",
           "use1Xscale": false,
           "name": "upgradetableiconinto.png",
-          "x": 193,
-          "y": 81
+          "x": 212,
+          "y": 70
         }
       },
       {
-        "type": "label",
+        "type": "button",
         "data": {
-          "text": "OUTPUT LOG:",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
+          "text": "START",
+          "onClick": {
+            "name": "IronGeneratorProcedure"
           },
-          "name": "OUTPUT LOG:",
-          "x": 136,
-          "y": 42
-        }
-      },
-      {
-        "type": "textfield",
-        "data": {
-          "placeholder": "INFO: generator ready",
-          "width": 120,
+          "width": 51,
           "height": 20,
-          "name": "output_log",
-          "x": 135,
-          "y": 56
+          "name": "START",
+          "x": 183,
+          "y": 45
         }
       }
     ],

@@ -75,11 +75,11 @@ public class IronGeneratorGUIMenu extends AbstractContainerMenu implements Suppl
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 11, 44) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 23, 34) {
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 46, 44) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 63, 33) {
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 95, 44) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 116, 32) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

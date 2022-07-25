@@ -8,10 +8,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.arduinomod.world.inventory.IronGeneratorGUIMenu;
+import net.mcreator.arduinomod.network.IronGeneratorGUIButtonMessage;
+import net.mcreator.arduinomod.ArduinoModMod;
 
 import java.util.HashMap;
 
@@ -23,7 +25,6 @@ public class IronGeneratorGUIScreen extends AbstractContainerScreen<IronGenerato
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	EditBox output_log;
 
 	public IronGeneratorGUIScreen(IronGeneratorGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -43,7 +44,6 @@ public class IronGeneratorGUIScreen extends AbstractContainerScreen<IronGenerato
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
-		output_log.render(ms, mouseX, mouseY, partialTicks);
 	}
 
 	@Override
@@ -54,14 +54,11 @@ public class IronGeneratorGUIScreen extends AbstractContainerScreen<IronGenerato
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("arduino_mod:textures/energysymbol.png"));
-		this.blit(ms, this.leftPos + 46, this.topPos + 43, 0, 0, 16, 16, 16, 16);
-
 		RenderSystem.setShaderTexture(0, new ResourceLocation("arduino_mod:textures/upgradetableiconplus.png"));
-		this.blit(ms, this.leftPos + 30, this.topPos + 45, 0, 0, 13, 13, 13, 13);
+		this.blit(ms, this.leftPos + 46, this.topPos + 35, 0, 0, 13, 13, 13, 13);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("arduino_mod:textures/upgradetableiconinto.png"));
-		this.blit(ms, this.leftPos + 67, this.topPos + 44, 0, 0, 22, 15, 22, 15);
+		this.blit(ms, this.leftPos + 86, this.topPos + 33, 0, 0, 22, 15, 22, 15);
 
 		RenderSystem.disableBlend();
 	}
@@ -72,20 +69,16 @@ public class IronGeneratorGUIScreen extends AbstractContainerScreen<IronGenerato
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-		if (output_log.isFocused())
-			return output_log.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
 	@Override
 	public void containerTick() {
 		super.containerTick();
-		output_log.tick();
 	}
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "OUTPUT LOG:", 10, 5, -12829636);
 	}
 
 	@Override
@@ -98,31 +91,11 @@ public class IronGeneratorGUIScreen extends AbstractContainerScreen<IronGenerato
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		output_log = new EditBox(this.font, this.leftPos + 9, this.topPos + 19, 120, 20, new TextComponent("INFO: generator ready")) {
-			{
-				setSuggestion("INFO: generator ready");
+		this.addRenderableWidget(new Button(this.leftPos + 57, this.topPos + 8, 51, 20, new TextComponent("START"), e -> {
+			if (true) {
+				ArduinoModMod.PACKET_HANDLER.sendToServer(new IronGeneratorGUIButtonMessage(0, x, y, z));
+				IronGeneratorGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-
-			@Override
-			public void insertText(String text) {
-				super.insertText(text);
-				if (getValue().isEmpty())
-					setSuggestion("INFO: generator ready");
-				else
-					setSuggestion(null);
-			}
-
-			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
-				if (getValue().isEmpty())
-					setSuggestion("INFO: generator ready");
-				else
-					setSuggestion(null);
-			}
-		};
-		guistate.put("text:output_log", output_log);
-		output_log.setMaxLength(32767);
-		this.addWidget(this.output_log);
+		}));
 	}
 }
