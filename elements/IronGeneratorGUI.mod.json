@@ -1,0 +1,115 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 136,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 171,
+          "y": 80
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 220,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energysymbol.png",
+          "use1Xscale": false,
+          "name": "energysymbol.png",
+          "x": 172,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "upgradetableiconplus.png",
+          "use1Xscale": false,
+          "name": "upgradetableiconplus.png",
+          "x": 156,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "upgradetableiconinto.png",
+          "use1Xscale": false,
+          "name": "upgradetableiconinto.png",
+          "x": 193,
+          "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "OUTPUT LOG:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "OUTPUT LOG:",
+          "x": 136,
+          "y": 42
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "INFO: generator ready",
+          "width": 120,
+          "height": 20,
+          "name": "output_log",
+          "x": 135,
+          "y": 56
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

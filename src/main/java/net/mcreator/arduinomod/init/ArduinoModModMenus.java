@@ -17,6 +17,7 @@ import net.mcreator.arduinomod.world.inventory.SchematicsTableGUIMenu;
 import net.mcreator.arduinomod.world.inventory.RechargerGUIMenu;
 import net.mcreator.arduinomod.world.inventory.ProjectTableGUIMenu;
 import net.mcreator.arduinomod.world.inventory.PCBCreatorGUIMenu;
+import net.mcreator.arduinomod.world.inventory.IronGeneratorGUIMenu;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -34,6 +35,8 @@ public class ArduinoModModMenus {
 			(id, inv, extraData) -> new SchematicsTableGUIMenu(id, inv, extraData));
 	public static final MenuType<RechargerGUIMenu> RECHARGER_GUI = register("recharger_gui",
 			(id, inv, extraData) -> new RechargerGUIMenu(id, inv, extraData));
+	public static final MenuType<IronGeneratorGUIMenu> IRON_GENERATOR_GUI = register("iron_generator_gui",
+			(id, inv, extraData) -> new IronGeneratorGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

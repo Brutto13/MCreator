@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arduino_mod:block/iron_generator_block"
+    }
+  }
+}

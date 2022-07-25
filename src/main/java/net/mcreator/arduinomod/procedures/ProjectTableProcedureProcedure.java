@@ -25,7 +25,7 @@ public class ProjectTableProcedureProcedure {
 			if (ArduinoModModItems.COPPER_SHEET
 					.get() == (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 							&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()
-					&& ArduinoModModItems.PC_BPROJECT
+					&& ArduinoModModItems.SCHEMATIC
 							.get() == (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 									&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
@@ -93,7 +93,7 @@ public class ProjectTableProcedureProcedure {
 						&& _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(ArduinoModModItems.SCHEMATIC.get());
 					_setstack.setCount(1);
-					((Slot) _slots.get(0)).set(_setstack);
+					((Slot) _slots.get(3)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 			}

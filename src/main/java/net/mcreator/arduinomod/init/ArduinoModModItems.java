@@ -18,6 +18,7 @@ import net.mcreator.arduinomod.item.ReadyPCBItem;
 import net.mcreator.arduinomod.item.PernamentMarkerItem;
 import net.mcreator.arduinomod.item.PCBprojectItem;
 import net.mcreator.arduinomod.item.MarkedCopperSheetItem;
+import net.mcreator.arduinomod.item.IronModuleItem;
 import net.mcreator.arduinomod.item.GoldenElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyTankItem;
 import net.mcreator.arduinomod.item.ElectricalEnergyItem;
@@ -48,6 +49,9 @@ public class ArduinoModModItems {
 	public static final RegistryObject<Item> DIAMOND_ELECTRICAL_ENERGY_TANK = REGISTRY.register("diamond_electrical_energy_tank",
 			() -> new DiamondElectricalEnergyTankItem());
 	public static final RegistryObject<Item> PROJECT_TABLE_BLOCK = block(ArduinoModModBlocks.PROJECT_TABLE_BLOCK,
+			ArduinoModModTabs.TAB_ELECTRICAL_MOD);
+	public static final RegistryObject<Item> IRON_MODULE = REGISTRY.register("iron_module", () -> new IronModuleItem());
+	public static final RegistryObject<Item> IRON_GENERATOR_BLOCK = block(ArduinoModModBlocks.IRON_GENERATOR_BLOCK,
 			ArduinoModModTabs.TAB_ELECTRICAL_MOD);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {

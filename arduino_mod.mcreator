@@ -283,6 +283,50 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "project_table_block"
+    },
+    {
+      "name": "IronModule",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_module"
+    },
+    {
+      "name": "IronGeneratorProcedure",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronGeneratorBlock",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator_block"
+    },
+    {
+      "name": "IronGeneratorGUI",
+      "type": "gui",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator_gui"
     }
   ],
   "variable_elements": [],
@@ -291,6 +335,7 @@
     "en_us": {
       "item.arduino_mod.marked_copper_sheet": "Marked Copper Sheet",
       "item.arduino_mod.pc_bproject": "PC Bproject",
+      "block.arduino_mod.iron_generator_block": "Iron Generator Block",
       "item.arduino_mod.ready_pcb": "Ready PCB",
       "item.arduino_mod.schematic": "Schematic",
       "item.arduino_mod.electrical_energy": "Electrical Energy",
@@ -303,6 +348,7 @@
       "block.arduino_mod.recharger_block": "Recharger Block",
       "block.arduino_mod.pc_bcreator": "PCB creator",
       "item.arduino_mod.pernament_marker": "Pernament Marker",
+      "item.arduino_mod.iron_module": "Iron Module",
       "itemGroup.tabelectrical_mod": "Electrical Mod",
       "block.arduino_mod.work_station": "Work Station",
       "item.arduino_mod.electrical_baterry": "9V Baterry"
