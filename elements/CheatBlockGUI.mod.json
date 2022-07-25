@@ -1,0 +1,94 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 168,
+    "height": 133,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
+          "height": 20,
+          "name": "input",
+          "x": 169,
+          "y": 113
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
+          "height": 20,
+          "name": "output_log",
+          "x": 170,
+          "y": 139
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "IN:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "IN:",
+          "x": 150,
+          "y": 118
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "OUT:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "OUT:",
+          "x": 145,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "cheat block",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "cheat block",
+          "x": 170,
+          "y": 63
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "cheat",
+          "width": 51,
+          "height": 20,
+          "name": "cheat",
+          "x": 176,
+          "y": 82
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

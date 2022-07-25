@@ -15,6 +15,7 @@ import net.mcreator.arduinomod.block.RechargerBlockBlock;
 import net.mcreator.arduinomod.block.ProjectTableBlockBlock;
 import net.mcreator.arduinomod.block.PCBcreatorBlock;
 import net.mcreator.arduinomod.block.IronGeneratorBlockBlock;
+import net.mcreator.arduinomod.block.CheatBlockBlock;
 import net.mcreator.arduinomod.ArduinoModMod;
 
 public class ArduinoModModBlocks {
@@ -24,4 +25,5 @@ public class ArduinoModModBlocks {
 	public static final RegistryObject<Block> RECHARGER_BLOCK = REGISTRY.register("recharger_block", () -> new RechargerBlockBlock());
 	public static final RegistryObject<Block> PROJECT_TABLE_BLOCK = REGISTRY.register("project_table_block", () -> new ProjectTableBlockBlock());
 	public static final RegistryObject<Block> IRON_GENERATOR_BLOCK = REGISTRY.register("iron_generator_block", () -> new IronGeneratorBlockBlock());
+	public static final RegistryObject<Block> CHEAT_BLOCK = REGISTRY.register("cheat_block", () -> new CheatBlockBlock());
 }

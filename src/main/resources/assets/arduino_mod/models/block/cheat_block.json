@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arduino_mod:blocks/workstation",
+    "up": "arduino_mod:blocks/workstation",
+    "north": "arduino_mod:blocks/cbfront",
+    "east": "arduino_mod:blocks/workstation",
+    "south": "arduino_mod:blocks/workstation",
+    "west": "arduino_mod:blocks/workstation",
+    "particle": "arduino_mod:blocks/workstation"
+  }
+}

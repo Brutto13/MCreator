@@ -53,6 +53,7 @@ public class ArduinoModModItems {
 	public static final RegistryObject<Item> IRON_MODULE = REGISTRY.register("iron_module", () -> new IronModuleItem());
 	public static final RegistryObject<Item> IRON_GENERATOR_BLOCK = block(ArduinoModModBlocks.IRON_GENERATOR_BLOCK,
 			ArduinoModModTabs.TAB_ELECTRICAL_MOD);
+	public static final RegistryObject<Item> CHEAT_BLOCK = block(ArduinoModModBlocks.CHEAT_BLOCK, ArduinoModModTabs.TAB_ELECTRICAL_MOD);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

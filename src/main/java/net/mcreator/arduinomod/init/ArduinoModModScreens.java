@@ -17,6 +17,7 @@ import net.mcreator.arduinomod.client.gui.RechargerGUIScreen;
 import net.mcreator.arduinomod.client.gui.ProjectTableGUIScreen;
 import net.mcreator.arduinomod.client.gui.PCBCreatorGUIScreen;
 import net.mcreator.arduinomod.client.gui.IronGeneratorGUIScreen;
+import net.mcreator.arduinomod.client.gui.CheatBlockGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ArduinoModModScreens {
@@ -29,6 +30,7 @@ public class ArduinoModModScreens {
 			MenuScreens.register(ArduinoModModMenus.SCHEMATICS_TABLE_GUI, SchematicsTableGUIScreen::new);
 			MenuScreens.register(ArduinoModModMenus.RECHARGER_GUI, RechargerGUIScreen::new);
 			MenuScreens.register(ArduinoModModMenus.IRON_GENERATOR_GUI, IronGeneratorGUIScreen::new);
+			MenuScreens.register(ArduinoModModMenus.CHEAT_BLOCK_GUI, CheatBlockGUIScreen::new);
 		});
 	}
 }

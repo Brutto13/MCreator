@@ -323,6 +323,58 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_generator_gui"
+    },
+    {
+      "name": "IronModuleRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_module_recipe"
+    },
+    {
+      "name": "Irongeneratorrecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "irongeneratorrecipe"
+    },
+    {
+      "name": "CheatBlockGUI",
+      "type": "gui",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheat_block_gui"
+    },
+    {
+      "name": "CheatBlockProcedure",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheat_block_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheatBlock",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheat_block"
     }
   ],
   "variable_elements": [],
@@ -345,6 +397,7 @@
       "block.arduino_mod.pc_bcreator": "PCB creator",
       "item.arduino_mod.pernament_marker": "Pernament Marker",
       "item.arduino_mod.iron_module": "Iron Module",
+      "block.arduino_mod.cheat_block": "Cheat Block",
       "itemGroup.tabelectrical_mod": "Electrical Mod",
       "block.arduino_mod.work_station": "Work Station",
       "item.arduino_mod.electrical_baterry": "9V Baterry"

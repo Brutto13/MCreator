@@ -15,6 +15,7 @@
   "block.arduino_mod.pc_bcreator": "PCB creator",
   "item.arduino_mod.pernament_marker": "Pernament Marker",
   "item.arduino_mod.iron_module": "Iron Module",
+  "block.arduino_mod.cheat_block": "Cheat Block",
   "itemGroup.tabelectrical_mod": "Electrical Mod",
   "block.arduino_mod.work_station": "Work Station",
   "item.arduino_mod.electrical_baterry": "9V Baterry"
