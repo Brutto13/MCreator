@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.arduinomod.init.ArduinoModModTabs;
 import net.mcreator.arduinomod.init.ArduinoModModItems;
+import net.mcreator.arduinomod.init.ArduinoModModEntities;
 import net.mcreator.arduinomod.init.ArduinoModModBlocks;
 
 import java.util.function.Supplier;
@@ -48,6 +49,7 @@ public class ArduinoModMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		ArduinoModModBlocks.REGISTRY.register(bus);
 		ArduinoModModItems.REGISTRY.register(bus);
+		ArduinoModModEntities.REGISTRY.register(bus);
 
 	}
 

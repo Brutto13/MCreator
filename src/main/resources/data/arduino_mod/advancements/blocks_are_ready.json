@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_block"
+    },
+    "title": {
+      "translate": "advancements.blocks_are_ready.title"
+    },
+    "description": {
+      "translate": "advancements.blocks_are_ready.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blocks_are_ready": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_block"
+            ],
+            "count": {
+              "min": 8,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "arduino_mod:generators"
+}

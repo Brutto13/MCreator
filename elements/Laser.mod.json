@@ -1,0 +1,43 @@
+{
+  "_fv": 28,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "laserpistol",
+    "customModelName": "Normal",
+    "name": "Laser pistol",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ElectricalMod"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:LASERAMMO"
+    },
+    "shootConstantly": true,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "block.anvil.place"
+    },
+    "hasGlow": true,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "LaserRangedItemUsed"
+    },
+    "bulletPower": 5.0,
+    "bulletDamage": 25.0,
+    "bulletKnockback": 10,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:LASERAMMO"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "LaserProjectileHitsBlock"
+    }
+  }
+}

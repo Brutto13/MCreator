@@ -4,9 +4,9 @@
   "definition": {
     "texture": "pt_bottom",
     "textureTop": "pt_top",
-    "textureLeft": "pt_left",
+    "textureLeft": "pt_right",
     "textureFront": "pt_front",
-    "textureRight": "pt_right",
+    "textureRight": "pt_left",
     "textureBack": "pt_back",
     "renderType": 10,
     "customModelName": "Normal",

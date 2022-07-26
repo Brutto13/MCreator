@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "arduino_mod:pernament_marker"
+    },
+    "title": {
+      "translate": "advancements.pernamentlymarked.title"
+    },
+    "description": {
+      "translate": "advancements.pernamentlymarked.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pernamentlymarked": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arduino_mod:pernament_marker"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "arduino_mod:pc_bprojecting"
+}

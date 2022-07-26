@@ -13,6 +13,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.arduinomod.world.inventory.CheatBlockGUIMenu;
+import net.mcreator.arduinomod.network.CheatBlockGUIButtonMessage;
+import net.mcreator.arduinomod.ArduinoModMod;
 
 import java.util.HashMap;
 
@@ -25,7 +27,6 @@ public class CheatBlockGUIScreen extends AbstractContainerScreen<CheatBlockGUIMe
 	private final int x, y, z;
 	private final Player entity;
 	EditBox input;
-	EditBox output_log;
 
 	public CheatBlockGUIScreen(CheatBlockGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -35,7 +36,7 @@ public class CheatBlockGUIScreen extends AbstractContainerScreen<CheatBlockGUIMe
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 168;
-		this.imageHeight = 133;
+		this.imageHeight = 99;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("arduino_mod:textures/cheat_block_gui.png");
@@ -46,7 +47,6 @@ public class CheatBlockGUIScreen extends AbstractContainerScreen<CheatBlockGUIMe
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
 		input.render(ms, mouseX, mouseY, partialTicks);
-		output_log.render(ms, mouseX, mouseY, partialTicks);
 	}
 
 	@Override
@@ -67,8 +67,6 @@ public class CheatBlockGUIScreen extends AbstractContainerScreen<CheatBlockGUIMe
 		}
 		if (input.isFocused())
 			return input.keyPressed(key, b, c);
-		if (output_log.isFocused())
-			return output_log.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
@@ -76,14 +74,12 @@ public class CheatBlockGUIScreen extends AbstractContainerScreen<CheatBlockGUIMe
 	public void containerTick() {
 		super.containerTick();
 		input.tick();
-		output_log.tick();
 	}
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "IN:", 20, 64, -12829636);
-		this.font.draw(poseStack, "OUT:", 15, 89, -12829636);
-		this.font.draw(poseStack, "cheat block", 40, 9, -12829636);
+		this.font.draw(poseStack, "IN:", 18, 68, -12829636);
+		this.font.draw(poseStack, "cheat block", 44, 17, -12829636);
 	}
 
 	@Override
@@ -96,15 +92,15 @@ public class CheatBlockGUIScreen extends AbstractContainerScreen<CheatBlockGUIMe
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		input = new EditBox(this.font, this.leftPos + 39, this.topPos + 59, 120, 20, new TextComponent(""));
+		input = new EditBox(this.font, this.leftPos + 40, this.topPos + 63, 120, 20, new TextComponent(""));
 		guistate.put("text:input", input);
 		input.setMaxLength(32767);
 		this.addWidget(this.input);
-		output_log = new EditBox(this.font, this.leftPos + 40, this.topPos + 85, 120, 20, new TextComponent(""));
-		guistate.put("text:output_log", output_log);
-		output_log.setMaxLength(32767);
-		this.addWidget(this.output_log);
-		this.addRenderableWidget(new Button(this.leftPos + 46, this.topPos + 28, 51, 20, new TextComponent("cheat"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 44, this.topPos + 37, 51, 20, new TextComponent("cheat"), e -> {
+			if (true) {
+				ArduinoModMod.PACKET_HANDLER.sendToServer(new CheatBlockGUIButtonMessage(0, x, y, z));
+				CheatBlockGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 	}
 }

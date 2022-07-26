@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "arduino_mod:copper_sheet"
+    },
+    "title": {
+      "translate": "advancements.pc_bprojecting.title"
+    },
+    "description": {
+      "translate": "advancements.pc_bprojecting.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pc_bprojecting": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arduino_mod:copper_sheet"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "arduino_mod:energy"
+}

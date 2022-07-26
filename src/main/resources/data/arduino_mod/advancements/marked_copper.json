@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "arduino_mod:marked_copper_sheet"
+    },
+    "title": {
+      "translate": "advancements.marked_copper.title"
+    },
+    "description": {
+      "translate": "advancements.marked_copper.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "marked_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arduino_mod:marked_copper_sheet"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "arduino_mod:pernamentlymarked"
+}

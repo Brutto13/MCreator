@@ -4,7 +4,7 @@
   "definition": {
     "type": 0,
     "width": 168,
-    "height": 133,
+    "height": 99,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -17,19 +17,8 @@
           "width": 120,
           "height": 20,
           "name": "input",
-          "x": 169,
-          "y": 113
-        }
-      },
-      {
-        "type": "textfield",
-        "data": {
-          "placeholder": "",
-          "width": 120,
-          "height": 20,
-          "name": "output_log",
           "x": 170,
-          "y": 139
+          "y": 134
         }
       },
       {
@@ -41,21 +30,8 @@
             "falpha": 0.0
           },
           "name": "IN:",
-          "x": 150,
-          "y": 118
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "OUT:",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "OUT:",
-          "x": 145,
-          "y": 143
+          "x": 148,
+          "y": 139
         }
       },
       {
@@ -67,19 +43,22 @@
             "falpha": 0.0
           },
           "name": "cheat block",
-          "x": 170,
-          "y": 63
+          "x": 174,
+          "y": 88
         }
       },
       {
         "type": "button",
         "data": {
           "text": "cheat",
+          "onClick": {
+            "name": "CheatBlockProcedure"
+          },
           "width": 51,
           "height": 20,
           "name": "cheat",
-          "x": 176,
-          "y": 82
+          "x": 174,
+          "y": 108
         }
       }
     ],

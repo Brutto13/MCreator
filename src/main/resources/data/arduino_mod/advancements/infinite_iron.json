@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "arduino_mod:iron_generator_block"
+    },
+    "title": {
+      "translate": "advancements.infinite_iron.title"
+    },
+    "description": {
+      "translate": "advancements.infinite_iron.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "infinite_iron": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "arduino_mod:iron_generator_block"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5000
+  },
+  "parent": "arduino_mod:module_ready"
+}

@@ -61,6 +61,42 @@
             "maxTrades": 10,
             "xp": 5,
             "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:MarkedCopperSheet"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "CUSTOM:Chemicals"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ReadyPCB"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Blocks.EMERALD_BLOCK"
+            },
+            "countPrice1": 25,
+            "price2": {
+              "value": "CUSTOM:DiamondElectricalEnergyTank"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:IronGeneratorBlock"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 2,
+            "xp": 1000,
+            "priceMultiplier": 0.05
           }
         ]
       }

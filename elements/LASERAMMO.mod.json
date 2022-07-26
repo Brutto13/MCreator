@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "diamond_energy_tank",
+    "texture": "laser",
     "customModelName": "Normal",
-    "name": "Diamond Electrical Energy Tank",
-    "rarity": "RARE",
+    "name": "LASER",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:ElectricalMod"
     },
@@ -14,7 +14,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 20,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": true,
+    "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -38,6 +38,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "block"
+    "animation": "eat"
   }
 }

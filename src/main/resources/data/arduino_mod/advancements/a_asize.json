@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "arduino_mod:electrical_baterry"
+    },
+    "title": {
+      "translate": "advancements.a_asize.title"
+    },
+    "description": {
+      "translate": "advancements.a_asize.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "a_asize": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arduino_mod:electrical_baterry"
+            ],
+            "count": {
+              "min": 1,
+              "max": 100000000000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "arduino_mod:energy"
+}

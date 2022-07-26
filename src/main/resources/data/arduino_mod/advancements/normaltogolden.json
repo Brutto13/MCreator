@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "arduino_mod:golden_electrical_energy_tank"
+    },
+    "title": {
+      "translate": "advancements.normaltogolden.title"
+    },
+    "description": {
+      "translate": "advancements.normaltogolden.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "normaltogolden": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arduino_mod:golden_electrical_energy_tank"
+            ],
+            "count": {
+              "min": 1,
+              "max": 100
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "arduino_mod:electrical_energy_tank_1"
+}

@@ -4,9 +4,9 @@
     "down": "arduino_mod:blocks/pt_bottom",
     "up": "arduino_mod:blocks/pt_top",
     "north": "arduino_mod:blocks/pt_front",
-    "east": "arduino_mod:blocks/pt_left",
+    "east": "arduino_mod:blocks/pt_right",
     "south": "arduino_mod:blocks/pt_back",
-    "west": "arduino_mod:blocks/pt_right",
+    "west": "arduino_mod:blocks/pt_left",
     "particle": "arduino_mod:blocks/pt_bottom"
   }
 }
