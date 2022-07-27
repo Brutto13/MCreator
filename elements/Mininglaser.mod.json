@@ -5,9 +5,9 @@
     "renderType": 0,
     "texture": "laserpistol",
     "customModelName": "Normal",
-    "name": "Laser pistol",
+    "name": "Mininglaser",
     "specialInfo": [
-      "shoots with lasers that explode if hits block can be used to craft mining laser"
+      "this laser shoots laser ammos\"that explode with big power\"Excelent for mining"
     ],
     "creativeTab": {
       "value": "CUSTOM:ElectricalMod"
@@ -19,27 +19,24 @@
     "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
-      "value": "block.anvil.place"
+      "value": "entity.arrow.shoot"
     },
-    "hasGlow": false,
+    "hasGlow": true,
     "animation": "crossbow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "onRangedItemUsed": {
-      "name": "LaserRangedItemUsed"
-    },
-    "bulletPower": 5.0,
-    "bulletDamage": 25.0,
-    "bulletKnockback": 10,
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
     "bulletParticles": false,
-    "bulletIgnitesFire": true,
+    "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "CUSTOM:LASERAMMO"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "LaserProjectileHitsBlock"
+      "name": "MininglaserProjectileHitsBlock"
     }
   }
 }

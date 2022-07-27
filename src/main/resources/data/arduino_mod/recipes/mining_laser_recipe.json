@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "arduino_mod:dust"
+    },
+    "1": {
+      "item": "arduino_mod:dust"
+    },
+    "2": {
+      "item": "arduino_mod:dust"
+    },
+    "3": {
+      "item": "arduino_mod:dust"
+    },
+    "4": {
+      "item": "arduino_mod:laser"
+    },
+    "5": {
+      "item": "arduino_mod:dust"
+    },
+    "6": {
+      "item": "arduino_mod:dust"
+    },
+    "7": {
+      "item": "arduino_mod:dust"
+    },
+    "8": {
+      "item": "arduino_mod:dust"
+    }
+  },
+  "result": {
+    "item": "arduino_mod:mininglaser",
+    "count": 1
+  }
+}

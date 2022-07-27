@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "arduino_mod:electrical_baterry"
+    },
+    "1": {
+      "item": "minecraft:redstone"
+    },
+    "2": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "arduino_mod:laserammo",
+    "count": 1
+  }
+}

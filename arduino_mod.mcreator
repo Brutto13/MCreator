@@ -595,6 +595,126 @@
           }
         ]
       }
+    },
+    {
+      "name": "Mininglaser",
+      "type": "rangeditem",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mininglaser"
+    },
+    {
+      "name": "LaserAmmoRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_ammo_recipe"
+    },
+    {
+      "name": "LaserPistolRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_pistol_recipe"
+    },
+    {
+      "name": "LaserPistolRecipe2",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_pistol_recipe_2"
+    },
+    {
+      "name": "LaserPistolRecipe3",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_pistol_recipe_3"
+    },
+    {
+      "name": "MiningLaserRecipe",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_laser_recipe"
+    },
+    {
+      "name": "MininglaserProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mininglaser_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UltimateBombRedstoneOn",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_bomb_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UltimateBomb",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_bomb"
+    },
+    {
+      "name": "UltimatebombRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatebomb_recipe"
     }
   ],
   "variable_elements": [],
@@ -608,10 +728,11 @@
       "advancements.module_ready.descr": "obtain iron module",
       "advancements.module_ready.title": "Module Ready",
       "item.arduino_mod.golden_electrical_energy_tank": "Golden Electrical Energy Tank",
+      "block.arduino_mod.ultimate_bomb": "Ultimate Bomb",
       "item.arduino_mod.dust": "Dust",
       "advancements.pc_bprojecting.descr": "get copper sheet",
-      "block.arduino_mod.pc_bcreator": "PCB creator",
       "advancements.normaltogolden.descr": "craft GOLDEN energy tank",
+      "block.arduino_mod.pc_bcreator": "PCB creator",
       "item.arduino_mod.pernament_marker": "Pernament Marker",
       "advancements.a_asize.descr": "obtain baterry",
       "item.arduino_mod.laser": "Laser pistol",
@@ -622,6 +743,7 @@
       "item.arduino_mod.pc_bproject": "PC Bproject",
       "item.arduino_mod.laserammo": "LASER",
       "advancements.blocks_are_ready.title": "Blocks Are Ready",
+      "item.arduino_mod.mininglaser": "Mininglaser",
       "item.arduino_mod.chemicals": "Chemicals",
       "block.arduino_mod.recharger_block": "Recharger Block",
       "item.arduino_mod.iron_module": "Iron Module",

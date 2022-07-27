@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "arduino_mod:energy"
+  "parent": "arduino_mod:marked_copper"
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arduino_mod:blocks/tntother",
+    "up": "arduino_mod:blocks/tntother",
+    "north": "arduino_mod:blocks/ultimatetnt",
+    "east": "arduino_mod:blocks/tntother",
+    "south": "arduino_mod:blocks/tntother",
+    "west": "arduino_mod:blocks/tntother",
+    "particle": "arduino_mod:blocks/tntother"
+  }
+}

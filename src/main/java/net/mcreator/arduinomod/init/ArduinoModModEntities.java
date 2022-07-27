@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.arduinomod.entity.MininglaserEntity;
 import net.mcreator.arduinomod.entity.LaserEntity;
 import net.mcreator.arduinomod.ArduinoModMod;
 
@@ -24,6 +25,9 @@ public class ArduinoModModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, ArduinoModMod.MODID);
 	public static final RegistryObject<EntityType<LaserEntity>> LASER = register("projectile_laser",
 			EntityType.Builder.<LaserEntity>of(LaserEntity::new, MobCategory.MISC).setCustomClientFactory(LaserEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MininglaserEntity>> MININGLASER = register("projectile_mininglaser",
+			EntityType.Builder.<MininglaserEntity>of(MininglaserEntity::new, MobCategory.MISC).setCustomClientFactory(MininglaserEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.arduinomod.block.WorkStationBlock;
+import net.mcreator.arduinomod.block.UltimateBombBlock;
 import net.mcreator.arduinomod.block.RechargerBlockBlock;
 import net.mcreator.arduinomod.block.ProjectTableBlockBlock;
 import net.mcreator.arduinomod.block.PCBcreatorBlock;
@@ -26,4 +27,5 @@ public class ArduinoModModBlocks {
 	public static final RegistryObject<Block> PROJECT_TABLE_BLOCK = REGISTRY.register("project_table_block", () -> new ProjectTableBlockBlock());
 	public static final RegistryObject<Block> IRON_GENERATOR_BLOCK = REGISTRY.register("iron_generator_block", () -> new IronGeneratorBlockBlock());
 	public static final RegistryObject<Block> CHEAT_BLOCK = REGISTRY.register("cheat_block", () -> new CheatBlockBlock());
+	public static final RegistryObject<Block> ULTIMATE_BOMB = REGISTRY.register("ultimate_bomb", () -> new UltimateBombBlock());
 }

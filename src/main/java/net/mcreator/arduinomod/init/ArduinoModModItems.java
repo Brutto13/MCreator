@@ -18,6 +18,7 @@ import net.mcreator.arduinomod.item.ReadyPCBItem;
 import net.mcreator.arduinomod.item.PernamentMarkerItem;
 import net.mcreator.arduinomod.item.PCBprojectItem;
 import net.mcreator.arduinomod.item.MobileRechargerItem;
+import net.mcreator.arduinomod.item.MininglaserItem;
 import net.mcreator.arduinomod.item.MarkedCopperSheetItem;
 import net.mcreator.arduinomod.item.LaserItem;
 import net.mcreator.arduinomod.item.LASERAMMOItem;
@@ -62,6 +63,8 @@ public class ArduinoModModItems {
 	public static final RegistryObject<Item> LASERAMMO = REGISTRY.register("laserammo", () -> new LASERAMMOItem());
 	public static final RegistryObject<Item> LASER = REGISTRY.register("laser", () -> new LaserItem());
 	public static final RegistryObject<Item> DUST = REGISTRY.register("dust", () -> new DustItem());
+	public static final RegistryObject<Item> MININGLASER = REGISTRY.register("mininglaser", () -> new MininglaserItem());
+	public static final RegistryObject<Item> ULTIMATE_BOMB = block(ArduinoModModBlocks.ULTIMATE_BOMB, ArduinoModModTabs.TAB_ELECTRICAL_MOD);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

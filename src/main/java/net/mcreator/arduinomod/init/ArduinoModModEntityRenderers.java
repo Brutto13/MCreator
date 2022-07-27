@@ -16,5 +16,6 @@ public class ArduinoModModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(ArduinoModModEntities.LASER.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ArduinoModModEntities.MININGLASER.get(), ThrownItemRenderer::new);
 	}
 }

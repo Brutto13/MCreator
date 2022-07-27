@@ -1,6 +1,9 @@
 
 package net.mcreator.arduinomod.item;
 
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
@@ -17,15 +20,14 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.arduinomod.procedures.LaserRangedItemUsedProcedure;
 import net.mcreator.arduinomod.init.ArduinoModModTabs;
 import net.mcreator.arduinomod.init.ArduinoModModItems;
-import net.mcreator.arduinomod.entity.LaserEntity;
+import net.mcreator.arduinomod.entity.MininglaserEntity;
 
 import java.util.List;
 
-public class LaserItem extends Item {
-	public LaserItem() {
+public class MininglaserItem extends Item {
+	public MininglaserItem() {
 		super(new Item.Properties().tab(ArduinoModModTabs.TAB_ELECTRICAL_MOD).durability(100));
 	}
 
@@ -38,7 +40,7 @@ public class LaserItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("shoots with lasers that explode if hits block can be used to craft mining laser"));
+		list.add(new TextComponent("this laser shoots laser ammos\"that explode with big power\"Excelent for mining"));
 	}
 
 	@Override
@@ -49,6 +51,12 @@ public class LaserItem extends Item {
 	@Override
 	public int getUseDuration(ItemStack itemstack) {
 		return 72000;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 
 	@Override
@@ -69,7 +77,7 @@ public class LaserItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					LaserEntity entityarrow = LaserEntity.shoot(world, entity, world.getRandom(), 5f, 25, 10);
+					MininglaserEntity entityarrow = MininglaserEntity.shoot(world, entity, world.getRandom(), 1f, 5, 5);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
@@ -87,8 +95,6 @@ public class LaserItem extends Item {
 								entity.getInventory().removeItem(stack);
 						}
 					}
-
-					LaserRangedItemUsedProcedure.execute(entity);
 				}
 			}
 		}
